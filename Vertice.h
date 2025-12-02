@@ -1,5 +1,7 @@
 #pragma once
-#include "Lista8.h"
+#include <iostream>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
