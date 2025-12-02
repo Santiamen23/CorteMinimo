@@ -66,6 +66,31 @@ void Grafo::InsertarArista(string nodoP, string nodoH)
 	}
 
 }
+void Grafo::mostrarGrafo() {
+	int id=0;
+	string destino,origen;
+	bool primero = true;
+	for (Arista* a : aristas) {
+		if (id != a->getVOrigen()|| primero==true)
+		{
+			if(id != a->getVOrigen())
+			{
+				cout << "]" << endl;
+			}
+			id = a->getVOrigen();
+			origen = vertices[a->getVOrigen()]->getVerticeId();
+			destino = vertices[a->getVDestino()]->getVerticeId();
+			if (primero == true){
+				primero = false;
+			}
+			cout << "Origen: " << origen << " ----- " << " Destinos: ["<<destino << ", ";
+		}
+		else {
+			destino = vertices[a->getVDestino()]->getVerticeId();
+			cout << destino<<", ";
+		}
+	}
+}
 
 void Grafo::setMarcasYPadres()
 {

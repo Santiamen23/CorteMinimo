@@ -28,7 +28,8 @@ int main()
 		system("cls");
 		cout << "1. Cargar Aristas desde Archivo (.txt)" << endl;
 		cout << "2. Calcular Corte Minimo" << endl;
-		cout << "3. Salir" << endl;
+		cout << "3. Mostrar Grafo" << endl;
+		cout << "4. Salir" << endl;
 		cout << "Seleccione una opcion: ";
 		cin >> op;
 
@@ -52,8 +53,10 @@ int main()
 		case 2:
 			tiempoCorteMinimo();
 			break;
-
 		case 3:
+			grafo->mostrarGrafo();
+			break;
+		case 4:
 			delete grafo;
 			exit(0);
 			break;

@@ -126,15 +126,11 @@
     <ClCompile Include="Arista.cpp" />
     <ClCompile Include="CorteMinimo.cpp" />
     <ClCompile Include="Grafo.cpp" />
-    <ClCompile Include="Lista8.cpp" />
-    <ClCompile Include="Tripla.cpp" />
     <ClCompile Include="Vertice.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arista.h" />
     <ClInclude Include="Grafo.h" />
-    <ClInclude Include="Lista8.h" />
-    <ClInclude Include="Tripla.h" />
     <ClInclude Include="Vertice.h" />
   </ItemGroup>
   <ItemGroup>

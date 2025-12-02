@@ -19,6 +19,7 @@ public:
 	Grafo();
 	~Grafo();
 	void InsertarVertice(string id);
+	void mostrarGrafo();
 	int getVertice(string i);
 	bool existeArista(string nodoP, string nodoH);
 	void InsertarArista(string nodoP, string nodoH);
