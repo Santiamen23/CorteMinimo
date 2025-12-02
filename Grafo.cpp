@@ -130,7 +130,7 @@ int Grafo::corteMinimo()
 	std::mt19937 gen(rd());
 
 	int min = 99999999;
-	int iteraciones = (ultimoVer + 1) * (ultimoVer + 1) * log10(ultimoVer + 1);
+	int iteraciones = (ultimoVer + 1) * (ultimoVer + 1) * log(ultimoVer + 1);
 
 	for (int it = 0; it < iteraciones; it++) {
 
